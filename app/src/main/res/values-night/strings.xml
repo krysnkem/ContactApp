@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="name">Name</string>
+    <string name="password">password</string>
+    <string name="add_contact">Add Contact</string>
+    <string name="new_category">New Category</string>
+    <string name="add_category">Add Category</string>
+    <string name="save">save</string>
+    <string name="number">Number</string>
+</resources>
