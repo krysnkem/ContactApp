@@ -92,7 +92,7 @@ class CategoryContactsActivity : AppCompatActivity() {
             val item = Database.contacts[Database.contacts.size - 1]
             adapter.setUpContact(item)
 
-            Toast.makeText(this, "${ Database.contactlist}", Toast.LENGTH_LONG).show()
+
 
             alertDialog.dismiss()
             contactNameInput.text.clear()
