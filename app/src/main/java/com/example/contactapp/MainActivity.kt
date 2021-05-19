@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity(), CustomAdapter.OnitemClickListener {
         binding = ActivityMainBinding.inflate(layoutInflater)
 
         setContentView(binding.root)
-        title = "Category"
+        title = "Contacts Category"
         binding.categoryRecycleView.layoutManager = GridLayoutManager(this, 2)
         setupData(binding)
     }
