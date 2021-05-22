@@ -6,7 +6,6 @@ import android.text.Editable
 import android.text.TextWatcher
 import android.widget.Button
 import android.widget.EditText
-import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.contactapp.databinding.ActivityCategoryContactsBinding
@@ -24,7 +23,9 @@ class CategoryContactsActivity : AppCompatActivity() {
         setContentView(binding.root)
         binding.categoryContactRecycleView.layoutManager = LinearLayoutManager(this)
         categoryName = intent.getStringExtra(MainActivity.CATEGORY_NAME)
-        title = categoryName
+        title = categoryName?.replaceFirstChar{
+            it.uppercase()
+        }
 
 
         setUpData(binding)
